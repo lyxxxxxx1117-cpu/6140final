@@ -71,3 +71,17 @@
 .page-turn-nav .button{min-height:48px;display:flex;align-items:center;justify-content:center}
 .edition-section{scroll-margin-top:110px}
 }
+
+/* Team attribution in the cover's normal flow. */
+.hero .cover-credits{flex-shrink:0;margin:0 0 20px;text-align:center;color:#746e68;font:12px/1.7 var(--sans);position:relative}
+.cover-credits>span{display:block;font-weight:600;letter-spacing:1px}
+.cover-credits>p{margin:12px 0 0}
+.hero:has(.cover-credits){height:auto;min-height:calc(100svh - 80px)}
+.hero:has(.cover-credits) .hero-scene{flex-basis:300px;min-height:300px}
+@media(max-width:700px){.hero .cover-credits{font-size:11px;margin-bottom:18px;padding:0 8px}.hero:has(.cover-credits) .hero-scene{flex-basis:320px;min-height:320px}}
+
+.hero .hero-copy.cover-credits{margin:14px 0 5px;padding:0;font-size:12px;line-height:1.7}
+.hero .hero-copy.cover-credits>p{margin:2px 0 0}
+
+#policy .condition-cloud{grid-template-columns:minmax(0,1fr)}
+#policy .condition-cloud span{line-height:1.4;overflow-wrap:break-word}
